@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="assignment2.css">
+</head>
+<body>
+    <div class="register-page">
+        <h4 class="header">Register</h4>
+        <form>
+            <table>
+                <tr>
+                    <input id="firstname" type="text" placeholder="First Name">
+                    <input id="lastname" type="text" placeholder="Last Name"><br>
+                </tr>
+                <tr>
+                    <input id="password" type="password" placeholder="Password">
+                    <input id="dateofbirth" type="date"><br>
+                </tr>
+                <tr>
+                    <div class="qualification">
+                        Qualifications
+                        <input type="checkbox" value="BTech">BTech
+                        <input type="checkbox" value="BCom" checked>BCom
+                        <input type="checkbox" value="MTech">MTech<br>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="gender">
+                        Gender
+                        <input type="radio" value="Male" name="radio">Male
+                        <input type="radio" value="Female" name="radio">Female<br>
+                    </div>
+                </tr>
+                <tr>
+                    <input class="state" type="text" placeholder="State">
+                    <select id="country">
+                        <option value="none" selected disabled hidden>Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </tr>
+                <tr>
+                    <input class="ph" type="tel" placeholder="Phone No">
+                    <input class="email" type="email" placeholder="E-Mail">
+                </tr>
+                <tr>
+                    <textarea class="textarea">Add Comment</textarea>
+                </tr>
+                <tr>
+                    <input class="submit" type="submit" value="Submit">
+                    <input class="reset" type="button" value="Reset">
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+</body>
+</html>
