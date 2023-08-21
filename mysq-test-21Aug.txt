@@ -1,0 +1,21 @@
+create database sqlassignment;
+use sqlassignment;
+
+Q-1
+
+select emp_no,emp_name,emp_sal,D.deptno,D.dept_name,D.dept_manager,city,state from department D,Address A,employee E where D.address_id = A.address_id and D.deptno = E.deptno;
+
+
+Q-2
+
+create table bankaccount(acc_no int primary key, acc_opended_date date, status text, balance double);
+
+create table transaction(acc_no int, trans_type text, trans_date date, trans_amount double, foreign key (acc_no) references bankaccount(acc_no) on delete cascade);
+
+Q-3
+
+create table employee(emp_no int, emp_name text, emp_sal decimal, department text, manager_name text);
+
+select sum(emp_sal),department,manager_name from employee group by department,manager_name;
+
+select emp_sal from employee e1 where 3 = (select count(DISTINCT emp_sal) from employee e2 where e2.emp_sal > e1.emp_sal);
